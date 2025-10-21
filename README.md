@@ -1,4 +1,4 @@
-# 🌟 FloatingTextParticles
+# 🖌️ FloatingTextParticles
 
 ![Preview](https://github.com/Mythical-Games/FloatingTextParticles/blob/master/Screenshot_20251021_155038.jpg)
 
