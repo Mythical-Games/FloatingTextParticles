@@ -35,12 +35,12 @@ public class FTCommand extends Command {
                 EntityPlayer player = context.getSender().asPlayer();
 
                 if (player == null) {
-                    context.addOutput("§l§7[§DFloatingTextParticles§7]§r§c You must be a player to run this command.");
+                    context.addOutput("§l§7[§dFloatingTextParticles§7]§r§c You must be a player to run this command.");
                     return context.fail();
                 }
 
                 if (config.getFloatingtexts().containsKey(id)) {
-                    context.addOutput("§l§7[§DFloatingTextParticles§7]§r§c FloatingText with that ID already exists.");
+                    context.addOutput("§l§7[§dFloatingTextParticles§7]§r§c FloatingText with that ID already exists.");
                     return context.fail();
                 }
 
@@ -53,7 +53,7 @@ public class FTCommand extends Command {
                 config.save();
 
                 manager.spawnText(id, ft);
-                context.addOutput("§l§7[§DFloatingTextParticles§7]§r§a FloatingText '" + id + "' created at your location.");
+                context.addOutput("§l§7[§dFloatingTextParticles§7]§r§a FloatingText '" + id + "' created at your location.");
                 return context.success();
             })
 
@@ -64,7 +64,7 @@ public class FTCommand extends Command {
                 String id = context.getResult(1);
 
                 if (!config.getFloatingtexts().containsKey(id)) {
-                    context.addOutput("§l§7[§DFloatingTextParticles§7]§r§cNo FloatingText with that ID.");
+                    context.addOutput("§l§7[§dFloatingTextParticles§7]§r§c No FloatingText with that ID.");
                     return context.fail();
                 }
 
@@ -73,7 +73,7 @@ public class FTCommand extends Command {
 
                 manager.removeText(id);
 
-                context.addOutput("§l§7[§DFloatingTextParticles§7]§r§a FloatingText '" + id + "' removed.");
+                context.addOutput("§l§7[§dFloatingTextParticles§7]§r§a FloatingText '" + id + "' removed.");
                 return context.success();
             });
     }
