@@ -27,7 +27,7 @@ public class FTCommand extends Command {
     public void prepareCommandTree(CommandTree tree) {
         tree.getRoot()
             .key("create")
-            .key("id")
+            .str("id")
             .msg("Floating Text")
             .exec(context -> {
                 String id = context.getResult(1);
