@@ -1,59 +1,18 @@
-# Allay Java Plugin Template
+# 🌟 FloatingTextParticles
 
-Welcome to the java plugin template for allay.
+![Preview](https://github.com/Mythical-Games/FloatingTextParticles/blob/master/Screenshot_20251021_155038.jpg)
 
-## Prerequisites
+A simple yet powerful **Floating Text Particles plugin** for **AllayMC**, allowing you to create, manage, and display floating texts anywhere in your world.  
+Perfect for announcements, labels, NPC titles, or region markers!
 
-- Java21 or higher.
-- Allay installed.
+---
 
-## Getting Started
+## ✨ Features
 
-1. **Clone this Repository**
+- 🚀 Create custom floating texts easily via commands or config  
+- 🔄 Persistent floating texts — saved and restored on server restart  
+- 🎨 Supports **color codes**
+- ⚡ Lightweight and optimized for performance  
+- 🗺️ Works across multiple worlds  
 
-```bash
-git clone https://github.com/AllayMC/JavaPluginTemplate.git
-```
-   
-2. **Navigate to the Cloned Directory**
-
-```bash
-cd JavaPluginTemplate
-```
-   
-3. **Change Plugin Information**
-
-- Rename package name from `org.allaymc.javaplugintemplate` to `your.group.name.and.pluginname`
-- Edit [build.gradle.kts](build.gradle.kts) and [settings.gradle.kts](settings.gradle.kts)
-- Update API version in [build.gradle.kts](build.gradle.kts) to the latest version (see TODO).
-  You can find the latest version here: https://central.sonatype.com/artifact/org.allaymc.allay/api
-- Edit [plugin.json](src/main/resources/plugin.json)
-- Reload gradle
-   
-4. **Build and Run Your Plugin**
-
-```bash
-gradlew shadowJar
-```
-   
-This command will produce a `.jar` file in the `build/libs` directory. 
-Copy the `.jar` file to the `plugins` directory of your allay server.
-Start the allay server and check the logs to ensure your plugin loads and operates
-as expected.
-
-5. **Test Your Plugin in Gradle**
-
-```bash
-gradlew runServer
-```
-
-This command will start an allay server with your plugin loaded.
-Then close allay server by clicking `X` in the dashboard window.
-
-## Documentation
-
-For a deeper dive into the Allay API and its functionalities, please refer to our [documentation](https://docs.allaymc.org) (WIP).
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+---
